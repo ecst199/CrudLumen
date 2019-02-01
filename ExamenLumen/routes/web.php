@@ -27,4 +27,10 @@ $router->group(['middleware' => []], function () use ($router) {
     $router->put('/put1', ['uses' => 'UsuarioController@put']);
     $router->get('/we1', ['uses' => 'UsuarioController@sp']);
 
+    $router->get('/doble', ['uses' => 'ProductoController@post']);
+    $router->get('/genero', ['uses' => 'ProductoController@get']);
+    $router->get('/traer', ['uses' => 'ProductoController@traer']);
+    $router->get('/inse', ['uses' => 'ProductoController@ins']);
+    $router->get('/ins', ['uses' => 'ProductoController@inse']);
+
 });
